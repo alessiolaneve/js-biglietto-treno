@@ -22,3 +22,4 @@ else if (age=>65){
 let prezzoTot = prezzo - sconto
 console.log(prezzoTot)
 // prezzo a due decimali
+document.getElementById("prezzo_html").innerHTML = "Il prezzo del biglietto è: " + prezzoTot;
