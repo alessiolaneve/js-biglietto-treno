@@ -1,11 +1,15 @@
 console.log('biglietto del treno')
 const prezzoKm = 0.21
 // km percorsi
-const km = parseInt(prompt('Inserisci il numero di km del viaggio')) 
+const inputKm = document.getElementById('km') 
 console.log (km)
 // età del passeggero
-const age = parseInt(prompt('Inserisci la tua età')) 
+const inputAge = document.getElementById('age')  
 console.log (age)
+// bottone calcola
+const buttonElement = document.getElementById('submit')
+console.log (buttonElement)
+buttonElement.addEventListener('click', function (){
 // prezzo totale, sconto < 18 o > 65
 const prezzo = prezzoKm * km
 console.log (prezzo)
@@ -21,5 +25,6 @@ else if (age=>65){
 
 let prezzoTot = prezzo - sconto
 console.log(prezzoTot)
-// prezzo a due decimali
-document.getElementById("prezzo_html").innerHTML = "Il prezzo del biglietto è: " + prezzoTot;
+}
+
+
